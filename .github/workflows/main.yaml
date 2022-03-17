@@ -24,4 +24,6 @@ jobs:
         run: ./gradlew test -p Lab_1
       - name: Execute Gradle Test for Lab 2
         run: ./gradlew test -p Lab_2
+      - name: Execute Gradle Test for Lab 3
+        run: ./gradlew test -p Lab_3
       
