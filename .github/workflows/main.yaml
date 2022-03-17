@@ -21,7 +21,7 @@ jobs:
       - name: Setup Gradle
         uses: gradle/gradle-build-action@v2
       - name: Execute Gradle Test for Lab 1
-        run: ./Lab_1/gradlew test -p lab_1
+        run: ./Lab_1/gradlew test -p Lab_1
       - name: Execute Gradle Test for Lab 2
-        run: ./Lab_2/gradlew test -p lab_2
+        run: ./Lab_2/gradlew test -p Lab_2
       
