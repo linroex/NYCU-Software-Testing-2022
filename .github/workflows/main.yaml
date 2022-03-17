@@ -18,11 +18,10 @@ jobs:
         with:
           java-version: '11'
           distribution: 'adopt'
-      - name: Test Lab_1
-        uses: gradle/gradle-build-action@937999e9cc2425eddc7fd62d1053baf041147db7
-        with:
-          arguments: test -p Lab_1
-      - name: Test Lab_2
-        uses: gradle/gradle-build-action@937999e9cc2425eddc7fd62d1053baf041147db7
-        with:
-          arguments: test -p Lab_2
+      - name: Setup Gradle
+        uses: gradle/gradle-build-action@v2
+      - name: Execute Gradle Test for Lab 1
+        run: ./lab_1/gradlew test -p lab_1
+      - name: Execute Gradle Test for Lab 2
+        run: ./lab_2/gradlew test -p lab_2
+      
